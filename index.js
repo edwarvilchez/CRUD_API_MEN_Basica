@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
   res.send("Hello Bobby");
 });
 
+app.post('api/products/', (req, res) => {
+    res.send('Data added successfully');
+});
+
 // connect to mongodb
 mongoose
   .connect(
