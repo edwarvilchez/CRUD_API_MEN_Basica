@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 // connect to mongodb
 mongoose
   .connect(
-    "mongodb+srv://edwarvilchez1977:b3eYhyBSRRux4QaD@clusterbdcrudapi.ncxxo.mongodb.net/?retryWrites=true&w=majority&appName=ClusterBDCRUDAPI"
+    "mongodb+srv://<username>:<password>@clusterbdcrudapi.ncxxo.mongodb.net/?retryWrites=true&w=majority&appName=ClusterBDCRUDAPI"
   )
   .then(() => {
     console.log("MongoDB connected successfully");
